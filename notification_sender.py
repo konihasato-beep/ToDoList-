@@ -4,7 +4,7 @@ from google.oauth2 import service_account
 import google.auth.transport.requests
 
 # サービスアカウント鍵のパス
-SERVICE_ACCOUNT_FILE = "data/todoapp-50f7b-firebase-adminsdk-fbsvc-1abdc1df90.json"
+SERVICE_ACCOUNT_FILE = "（サービスアカウント鍵のパス）.json"
 
 # Firebase プロジェクトID
 PROJECT_ID = "todoapp-50f7b"
