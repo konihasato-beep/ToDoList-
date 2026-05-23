@@ -1,3 +1,3 @@
-本体「ToDoList.py」
-Googleアカウント連携画面関連「login_window.py」
-スマホ通知「notification_sender.py」
+「ToDoList.py」本体
+「login_window.py」Googleアカウント連携画面関連
+「notification_sender.py」スマホ通知
