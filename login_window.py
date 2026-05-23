@@ -117,7 +117,7 @@ class LoginWindow(QWidget):
             self.creds.refresh(Request())
             response = requests.get(
                 "https://openidconnect.googleapis.com/v1/userinfo",
-                headers={"Authorization": f"Bearer {self.creds.token}"}
+                headers={"Authorization": f"Bearer {self.creds.token}"} #シークレット
             )
             if response.status_code == 200:
                 return response.json().get("email", "Unknown user")
