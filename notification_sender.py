@@ -9,7 +9,7 @@ SERVICE_ACCOUNT_FILE = "（サービスアカウント鍵のパス）.json"
 # Firebase プロジェクトID
 PROJECT_ID = "todoapp-50f7b"
 
-FCM_TOKEN = "eiAR5Oa7TbSnBqEtzrn_5d:APA91bFOIevik8uMQlHeAl5IYItNklGLOjoLA4jtwmdtmBy5OpaWY33GrxNVqMCMSnkaGW-dhnDEtQs3GCrIjJ49d7klQThvYCFaFUSgnHK8z_9j0LfThNM"
+FCM_TOKEN = "（トークン）"
 
 def get_access_token():
     credentials = service_account.Credentials.from_service_account_file(
