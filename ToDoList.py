@@ -322,7 +322,7 @@ class NumberRenderer(QWidget):
             painter.drawPixmap(x_offset, 0, scaled)
             x_offset += scaled.width()
 
-class HoverButton(QPushButton):#特殊なやつ。ジャンル帰るボタン用につくったやつ。
+class HoverButton(QPushButton):#特殊なやつ。ジャンル帰るボタン用につくったもの
     def __init__(self, target_widget, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.target_widget = target_widget
@@ -2992,7 +2992,7 @@ class EditScreen(QWidget):
         self.top_layout.addWidget(self.input1)
         self.main_layout.addLayout(self.top_layout)
 
-        # ②以下6項目（2列×3行）
+        # 以下6項目（2列×3行）
         self.row1_layout = QHBoxLayout()
         self.row1_layout.setAlignment(Qt.AlignLeft)
         self.label2 = QLabel("value")
@@ -3203,7 +3203,7 @@ class EditScreen(QWidget):
         self.ring_btn.setIconSize(QSize(80, 80))
         self.label6.setFixedSize(347, 184) 
         self.label7.setFixedSize(347, 184)
-        self.switcher1.setStyleSheet("margin: 0px;")#padding: 0px;書いたら消えたしね
+        self.switcher1.setStyleSheet("margin: 0px;")#padding: 0px;
         self.row3_layout.addWidget(self.label6, alignment=Qt.AlignLeft)
         self.row3_layout.addWidget(self.switcher2, alignment=Qt.AlignLeft)
         self.row3_layout.addWidget(self.btn_add_genre, alignment=Qt.AlignLeft)
@@ -3270,7 +3270,7 @@ class EditScreen(QWidget):
         if self.save_count >= 1:
             print("すでに保存されています")
             return
-    # 入力内容を取得
+    # 入力内容取得
         self.main_window.save_count = self.main_window.save_count + 1
         self.todo_text = self.input1.text().strip()
         self.year = int(self.year_input.text().strip())
@@ -3311,7 +3311,6 @@ class EditScreen(QWidget):
         print(f"{data_id} に保存されました:", self.data)
         self.save_btn.hide()
         self.saved_btn.show()
-        # TODO: ファイル保存やデータベース登録などに応用
         self.main_window.info["save_count"] = self.main_window.save_count
         self.main_window.todo_data_store.append(self.data)#todo_data_store全ToDoの一覧
         self.main_window.todo_screen.todo_data_store = self.main_window.todo_data_store
