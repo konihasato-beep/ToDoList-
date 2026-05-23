@@ -3016,7 +3016,7 @@ class EditScreen(QWidget):
         padding: 10px;padding-left: 60px;}""")
         self.label2.setFixedSize(347, 184) 
         self.label3.setFixedSize(347, 184)
-        self.switcher1.setStyleSheet("margin: 0px;")#padding: 0px;書いたら消えたしね
+        self.switcher1.setStyleSheet("margin: 0px;")#padding: 0px;書いたら消えた
         # 時間・分入力欄のレイアウト
         self.time_layout = QHBoxLayout()
         self.hour_input11 = QLineEdit()
@@ -3073,7 +3073,7 @@ class EditScreen(QWidget):
         padding: 10px;padding-left: 60px;}""")
         self.label4.setFixedSize(347, 184) 
         self.label5.setFixedSize(347, 184)
-        self.switcher3.setStyleSheet("margin: 0px;")#padding: 0px;書いたら消えたしね
+        self.switcher3.setStyleSheet("margin: 0px;")#padding: 0px;書いたら消えた
         # 日付入力欄のレイアウト
         self.date_layout = QHBoxLayout()
         self.year_input = QLineEdit()
