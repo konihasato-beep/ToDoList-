@@ -63,13 +63,13 @@ class LoginWindow(QWidget):
         self.check_login_state()
 
     def authenticate_user(self):
-        if os.path.exists("token.pickle"):
+        if os.path.exists("token.pickle"): #シークレット
             with open("token.pickle", "rb") as token:
                 self.creds = pickle.load(token)
             self.status_label.setText("Logged in")
         else:
             flow = InstalledAppFlow.from_client_secrets_file(
-                "data/client_secret_771465447128-0m771kbntb2e3aia6vmm54til2oijhvl.apps.googleusercontent.com.json",
+                "data/ファイルのパス.json",
                 scopes = [
     "openid",
     "https://www.googleapis.com/auth/userinfo.email",
@@ -89,7 +89,7 @@ class LoginWindow(QWidget):
             self.logout_button.show()
 
     def logout_user(self):
-        if os.path.exists("token.pickle"):
+        if os.path.exists("token.pickle"):#シークレット
             os.remove("token.pickle")
         self.creds = None
         self.status_label.setText("Guest mode")
