@@ -14,7 +14,7 @@ from login_window import LoginWindow
 from googleapiclient.discovery import build
 from google.auth.transport.requests import Request
 from notification_sender import send_push_notification
-FCM_TOKEN = "eiAR5Oa7TbSnBqEtzrn_5d:APA91bFOIevik8uMQlHeAl5IYItNklGLOjoLA4jtwmdtmBy5OpaWY33GrxNVqMCMSnkaGW-dhnDEtQs3GCrIjJ49d7klQThvYCFaFUSgnHK8z_9j0LfThNM"
+FCM_TOKEN = "（トークン）"
 
 def load_frames_from_xml(xml_path):
     tree = ET.parse(xml_path)
